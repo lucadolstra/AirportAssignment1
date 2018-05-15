@@ -1,0 +1,82 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .jumbotron-heading-home {
+        font-size: 2em;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+    .jumbotron-heading {
+        font-size: 2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .jumbotron-heading-home {
+        font-size: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .jumbotron-heading {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .jumbotron-heading-home {
+        font-size: 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .jumbotron-heading {
+        font-size: 3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .jumbotron-heading-home {
+        font-size: 4em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .jumbotron-heading {
+        font-size: 3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .jumbotron-heading-home {
+        font-size: 5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .jumbotron-heading {
+        font-size: 3em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
+
+a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-image: url("http://www.ronapratama.com/wp-content/uploads/2014/03/airport-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+

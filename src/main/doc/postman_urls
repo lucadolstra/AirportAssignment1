@@ -1,0 +1,14 @@
+The following URLs will lead to the described functionalities:
+
+
+GET ALL PLANES:
+api/airplane/all
+gets all airplanes saved in the AirplaneRepository, including one Dummy Airplane used for testing.
+
+
+CREATE A PLANE:
+api/airplane/add/{name}/{location}
+to add an airplane with a custom name and location. The id is generated automatically,
+the fuel level is set to 5(tons) for a new plane.
+
+

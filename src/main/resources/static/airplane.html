@@ -5,6 +5,7 @@
     <title>
         Airport
     </title>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -104,6 +105,7 @@
                     <tr>
                         <th scope="col" width="40%">Name</th>
                         <th scope="col" width="30%">Location</th>
+                        <th scope="col" width="30%">Fuel</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -145,9 +147,14 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="airplane.js"></script>
-
+<script>
+    $(document).ready(function(){
+        console.log("entering Airplane function");
+        setupAirplanes();
+    });
+</script>
 </body>
 
 </html>

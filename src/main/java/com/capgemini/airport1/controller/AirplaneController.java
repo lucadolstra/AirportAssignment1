@@ -46,18 +46,26 @@ public class AirplaneController {
     }
 
 
+    @PostMapping("/add/")
+    public Airplane addAirplane(@RequestBody Airplane airplane) {
+       airplane.setFuel(5);
 
-   //Add airplane with a name and a location
-    @GetMapping("/add/{name}/{location}")
-    public Airplane addAirplane(@PathVariable String name, @PathVariable String location) {
-        Airplane airplane = new Airplane();
-        airplane.setName(name);
-        airplane.setLocation(location);
-        airplane.setFuel(5);
-
-        System.out.println(airplane);
+        System.out.println("The new airplane in repo: " + airplane.getName());
         return airplaneRepository.save(airplane);
     }
+
+
+//   //Add airplane with a name and a location
+//    @GetMapping("/add/{name}/{location}")
+//    public Airplane addAirplane2(@PathVariable String name, @PathVariable String location) {
+//        Airplane airplane = new Airplane();
+//        airplane.setName(name);
+//        airplane.setLocation(location);
+//        airplane.setFuel(5);
+//
+//        System.out.println(airplane);
+//        return airplaneRepository.save(airplane);
+//    }
 
     //Delete Airplane by ID
     @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)

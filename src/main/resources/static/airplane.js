@@ -1,17 +1,17 @@
-
-
-function postDataFood() {
+function postDataAirplane() {
     console.log("posting data...");
 
     // Get values from html.
     var name = $("#name").val();
     var location = $("#location").val();
+    var fuel = $("#fuel").val();
 
 
     // Create JS object with data.
     var newAirplane = {
         name : name,
-        location : location
+        location : location,
+        fuel : fuel
     };
     console.log(newAirplane);
 
@@ -21,7 +21,7 @@ function postDataFood() {
 
     // Post JSON to endpoint.
     $.ajax({
-        url: "/api/airplane/add",
+        url: "/api/airplane/add/",
         type: "post",
         data: validJsonAirplane,
         contentType: "application/json",
@@ -38,7 +38,7 @@ function getDataAirplane() {
 
     // Get the data from endpoint.
     $.ajax({
-        url: "/api/airplane/",
+        url: "/api/airplane/all/",
         type: "get",
         success: function (airplanes) {
             // On successful get, reload the datatable with new data.
@@ -68,7 +68,8 @@ function setupAirplanes() {
     $('#airplane').DataTable({
         columns: [
             {"data": "name"},
-            {"data": "location"}
+            {"data": "location"},
+            {"data": "fuel"}
         ]
     });
 

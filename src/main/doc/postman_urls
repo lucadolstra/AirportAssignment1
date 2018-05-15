@@ -7,8 +7,8 @@ gets all airplanes saved in the AirplaneRepository, including one Dummy Airplane
 
 
 CREATE A PLANE:
-api/airplane/add/{name}/{location}
-to add an airplane with a custom name and location. The id is generated automatically,
+api/airplane/add/
+The id is generated automatically,
 the fuel level is set to 5(tons) for a new plane.
 
 
